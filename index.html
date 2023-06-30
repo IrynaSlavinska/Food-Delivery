@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FoodSta</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:ital,wght@0,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/mob-media.css" />
+    <link rel="stylesheet" href="./styles/tablet.css" />
+    <link rel="stylesheet" href="./styles/desktop.css" />
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <!---------------------------------OFFERINGS--------------------------------->
+      <div class="offer-container container">
+        <img
+          srcset="./image/apple-1.png 1x, ./image/apple-1-2x.png 2x"
+          src="./image/apple-1.png"
+          width="280"
+          height="310"
+          alt="Apple"
+          class="offer-image"
+        />
+        <div class="offer-wrap">
+          <h2 class="offer-title">What`s Special About Our Offerings</h2>
+          <p class="offer-text">
+            With our platform, you can browse through a diverse selection of
+            cuisines and local restaurants, and choose from a variety of dishes
+            that cater to your specific taste buds.
+          </p>
+          <ul class="offer-list">
+            <li class="offer-item">
+              <span class="offer-icon-bg">
+                <svg class="offer-icon" width="32" height="32">
+                  <use href="./image/delivery-icons.svg#icon-rocket"></use>
+                </svg>
+              </span>
+              <h3 class="offer-subtitle">Fastest delivery</h3>
+              <p class="offer-subtext">
+                Our advanced logistics system and dedicated delivery partners
+                ensure that your meals are delivered to you within 30-minutes.
+              </p>
+            </li>
+            <li class="offer-item">
+              <span class="offer-icon-bg">
+                <svg class="offer-icon" width="32" height="32">
+                  <use href="./image/delivery-icons.svg#icon-order"></use>
+                </svg>
+              </span>
+              <h3 class="offer-subtitle">Easy to order</h3>
+              <p class="offer-subtext">
+                You can browse through a wide variety of cuisines and
+                restaurants, select your favorite meals, and place your order in
+                just a few clicks.
+              </p>
+            </li>
+          </ul>
+          <div class="offer-bottom">
+            <button type="button" class="offer-button">Order now</button>
+            <div class="offer-link-wrap">
+              <a href="" class="offer-link">Read more</a>
+              <svg class="offer-more" width="13" height="13">
+                <use href="./image/delivery-icons.svg#icon-more"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!---------------------------------FAVORITES--------------------------------->
+      <h2>Some of Our Favorites</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </main>
+    <footer></footer>
+  </body>
+</html>

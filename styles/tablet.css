@@ -1,0 +1,36 @@
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 1279px;
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+  .offer-container {
+    background-image: url(../image/tablet-bg-1.png);
+    padding-top: 150px;
+  }
+  .offer-image {
+    margin-left: 0;
+    margin-bottom: 60px;
+  }
+
+  .offer-title {
+    font-size: 42px;
+    line-height: 1.17;
+    max-width: 526px;
+    margin-bottom: 20px;
+  }
+  .offer-text {
+    font-size: 16px;
+    line-height: 1.19;
+    margin-bottom: 32px;
+    max-width: 500px;
+  }
+  .offer-list {
+    flex-direction: row;
+    gap: 60px;
+    margin-bottom: 20px;
+  }
+  .offer-item {
+    width: calc((100% - 60px) / 2);
+  }
+}

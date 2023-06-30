@@ -1,0 +1,40 @@
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: unset;
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+  .offer-container {
+    background-image: url(../image/desktop-bg-1.png);
+    display: flex;
+    gap: 90px;
+    padding-top: 260px;
+  }
+  .offer-image {
+    margin-left: 0;
+  }
+  .offer-wrap {
+    margin-right: 52px;
+    width: 580px;
+  }
+  .offer-title {
+    font-size: 42px;
+    line-height: 1.2;
+  }
+  .offer-text {
+    font-size: 16px;
+    line-height: 1.19;
+    margin-bottom: 48px;
+  }
+  .offer-list {
+    flex-direction: row;
+    gap: 60px;
+    margin-bottom: 20px;
+  }
+  .offer-item {
+    width: calc((100% - 60px) / 2);
+  }
+  .offer-link-wrap {
+    display: none;
+  }
+}
