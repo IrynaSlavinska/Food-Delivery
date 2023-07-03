@@ -56,7 +56,7 @@ body {
   overflow: hidden;
 }
 /* -----------------------------OFFERINGS----------------------------- */
-.offer-container {
+.offer {
   background-image: url(../image/mobile-bg-1.png);
   background-repeat: no-repeat;
   background-position: top;
@@ -78,7 +78,6 @@ body {
 }
 .offer-text {
   font-size: 14px;
-  font-weight: 400;
   line-height: 1.43;
   margin-bottom: 28px;
 }
@@ -111,7 +110,6 @@ body {
 }
 .offer-subtext {
   font-size: 14px;
-  font-weight: 400;
   line-height: 1.43;
 }
 .offer-button {
@@ -142,7 +140,188 @@ body {
   display: flex;
   gap: 24px;
 }
+/* -----------------------------OFFERINGS----------------------------- */
+.favorites {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.favorites-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.17;
+  margin-bottom: 20px;
+}
 
+.favorites-text {
+  color: #2c2c2c;
+  text-align: center;
+  font-size: 14px;
+  font-family: Roboto;
+  line-height: 1.14;
+  margin-bottom: 60px;
+}
+.favorites-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.favorites-item {
+}
+.favorites-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  border: 11px solid var(--yellow);
+  background: transparent;
+  transition: border-color var(--transition-effect);
+}
+.favorites-link:hover,
+.favorites-link:focus {
+  border-color: var(--light-green);
+}
+.favorites-link:active {
+  border-color: var(--dark-green);
+}
+.favorites-image {
+}
+/* -----------------------------CUSTOMERS----------------------------- */
+.customers {
+  background-image: url(../image/mobile-bg-2.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  margin: 0 auto;
+  background-size: 100%;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.customers-title {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.17;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.customers-text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.14;
+  margin-bottom: 32px;
+  text-align: center;
+}
+.customers-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.customers-item {
+  padding: 12px;
+  background-color: #ffffff;
+  margin-bottom: 24px;
+  max-width: 336px;
+  margin: 0 auto;
+  position: relative;
+  border-radius: 34px;
+  border-top-left-radius: 0;
+}
+.customers-stars {
+  margin-bottom: 28px;
+}
+.customers-response {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.18;
+  margin-bottom: 40px;
+}
+.customers-wrap {
+  margin-left: 64px;
+  position: relative;
+}
+.customers-wrap::after {
+  z-index: 1;
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 50px;
+  background-color: #7eb101;
+  bottom: -6px;
+  left: 104px;
+}
+.customers-photo {
+  position: absolute;
+  left: 8px;
+  bottom: 10px;
+}
+.customers-name {
+  font-weight: 500;
+  line-height: 1.14;
+  margin-bottom: 2px;
+}
+.customers-about {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.14;
+}
+/* -----------------------------PREFOOTER----------------------------- */
+.prefooter {
+  position: relative;
+  padding-top: 52px;
+  padding-bottom: 60px;
+}
+.prefooter-image {
+  position: absolute;
+  top: -45px;
+  left: 50%;
+  transform: translate(-50%);
+  margin-bottom: 16px;
+}
+.prefooter-title {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.17;
+  min-width: 258px;
+  margin-bottom: 20px;
+}
+.prefooter-text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.14;
+  margin-bottom: 40px;
+}
+.prefooter-form {
+  display: flex;
+  flex-direction: column;
+}
+.prefooter-label {
+}
+.prefooter-input {
+  padding: 12px;
+  border-radius: 30px;
+  border: 0.9px solid var(--yellow);
+  background: #ffffff;
+  color: #505050;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.16;
+  margin-bottom: 20px;
+}
+.prefooter-button {
+  color: inherit;
+  font-size: 13px;
+  font-family: Roboto;
+  font-weight: 500;
+  line-height: 1.15;
+  padding: 11px 22px;
+  max-width: 103px;
+  background: var(--light-green);
+  border: transparent;
+  border-radius: 30px;
+  margin-left: auto;
+}
 /* @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
       background-image: linear-gradient(

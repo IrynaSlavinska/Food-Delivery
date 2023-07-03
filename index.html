@@ -4,10 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FoodSta</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:ital,wght@0,400;1,700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:ital,wght@0,400;0,500;1,700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles/main.css" />
@@ -19,10 +26,10 @@
     <header></header>
     <main>
       <!---------------------------------OFFERINGS--------------------------------->
-      <div class="offer-container container">
+      <section class="offer container">
         <img
-          srcset="./image/apple-1.png 1x, ./image/apple-1-2x.png 2x"
-          src="./image/apple-1.png"
+          srcset="./image/apple-1-1x.png 1x, ./image/apple-1-2x.png 2x"
+          src="./image/apple-1-1x.png"
           width="280"
           height="310"
           alt="Apple"
@@ -72,10 +79,190 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <!---------------------------------FAVORITES--------------------------------->
-      <h2>Some of Our Favorites</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+      <picture>
+        <source srcset="srcset="./image/apple-1-1x.png 1x,
+        ./image/apple-1-2x.png 2x" media="(min-width: 320px)" /> <source
+        srcset="srcset="./image/apple-2-1x.png 1x, ./image/apple-2-2x.png 2x"
+        media="(min-width: 768px)" /> <source
+        srcset="srcset="./image/apple-3-1x.png 1x, ./image/apple-3-2x.png 2x"
+        media="(min-width: 1280px)" />
+        <img src="./image/apple-1-1x.png" alt="apple" width="" height="" />
+      </picture>
+
+      <section class="favorites container">
+        <h2 class="favorites-title">Some of Our Favorites</h2>
+        <p class="favorites-text">Looking for something delicious?</p>
+        <ul class="favorites-list">
+          <li class="favorites-item">
+            <a href="" class="favorites-link"
+              ><img
+                class="favorites-image"
+                srcset="./image/f1-gamburger.png 1x, ./image/f1-gamburger-2x 2x.png"
+                src="./image/f1-gamburger.png"
+                alt="Gamburger"
+                width="224"
+                height="224"
+            /></a>
+          </li>
+          <li class="favorites-item">
+            <a href="" class="favorites-link"
+              ><img
+                class="favorites-image"
+                srcset="./image/f2-pasta.png 1x, ./image/f2-pasta-2x 2x.png"
+                src="./image/f2-pasta.png"
+                alt="Pasta"
+                width="224"
+                height="224"
+            /></a>
+          </li>
+          <li class="favorites-item">
+            <a href="" class="favorites-link"
+              ><img
+                class="favorites-image"
+                srcset="./image/f3-pizza.png 1x, ./image/f3-pizza-2x.png 2x"
+                src="./image/f3-pizza.png"
+                alt="Pizza"
+                width="224"
+                height="224"
+            /></a>
+          </li>
+          <li class="favorites-item">
+            <a href="" class="favorites-link"
+              ><img
+                class="favorites-image"
+                srcset="./image/f4-chicken.png 1x, ./image/f4-chicken-2x.png 2x"
+                src="./image/f4-chicken.png"
+                alt="Chicken"
+                width="224"
+                height="224"
+            /></a>
+          </li>
+          <li class="favorites-item">
+            <a href="" class="favorites-link"
+              ><img
+                class="favorites-image"
+                srcset="./image/f5-salat.png 1x, ./image/f5-salat-2x.png 2x"
+                src="./image/f5-salat.png"
+                alt="salat"
+                width="224"
+                height="224"
+            /></a>
+          </li>
+          <li class="favorites-item">
+            <a href="" class="favorites-link"
+              ><img
+                class="favorites-image"
+                srcset="./image/f6-borshch.png 1x, ./image/f6-borshch-2x.png 2x"
+                src="./image/f6-borshch.png"
+                alt="borshch"
+                width="224"
+                height="224"
+            /></a>
+          </li>
+        </ul>
+      </section>
+      <!---------------------------------CUSTOMERS--------------------------------->
+      <section class="customers container">
+        <h2 class="customers-title">What our Customers Say</h2>
+        <p class="customers-text">
+          Don't just take our word for it - see what our satisfied customers
+          have to say
+        </p>
+        <ul class="customers-list">
+          <li class="customers-item">
+            <img
+              srcset="./image/stars-1x.png 1x, ./image/stars-2x.png 2x"
+              src="./image/stars-1x.png"
+              alt="response"
+              width="101"
+              height="16"
+              class="customers-stars"
+            />
+            <p class="customers-response">
+              “The Best app I have used to order food in a while, so many
+              options to choose from too, I would recommend to a freind, No
+              questions asked”
+            </p>
+
+            <img
+              srcset="
+                ./image/customer-1-1x.png 1x,
+                ./image/customer-1-2x.png 2x
+              "
+              src="./image/customer-1-1x.png"
+              alt="Sumith Shah Photo"
+              width="48"
+              height="48"
+              class="customers-photo"
+            />
+            <div class="customers-wrap">
+              <p class="customers-name">Sumith Shah</p>
+              <p class="customers-about">Some Dude</p>
+            </div>
+          </li>
+
+          <li class="customers-item">
+            <img
+              srcset="./image/stars-1x.png 1x, ./image/stars-2x.png 2x"
+              src="./image/stars-1x.png"
+              alt="response"
+              width="101"
+              height="16"
+              class="customers-stars"
+            />
+            <p class="customers-response">
+              “The ease with which I can just go in and order what i want was
+              amazing, It has been a very pleasant experience ordering from this
+              app”
+            </p>
+
+            <img
+              srcset="
+                ./image/customer-2-1x.png 1x,
+                ./image/customer-2-2x.png 2x
+              "
+              src="./image/customer-2-1x.png"
+              alt="Sumith Shah Photo"
+              width="48"
+              height="48"
+              class="customers-photo"
+            />
+            <div class="customers-wrap">
+              <p class="customers-name">Sumith Shah</p>
+              <p class="customers-about">Some Dude</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <!---------------------------------PREFOOTER--------------------------------->
+      <section class="prefooter container">
+        <img
+          src="./image/banana-1-1x.png"
+          alt="banana"
+          width="161"
+          height="78"
+          class="prefooter-image"
+        />
+        <h2 class="prefooter-title">Subscribe To Get Special Offers</h2>
+        <p class="prefooter-text">
+          Order now and receive 10% off your first meal with Enjoy Your Favorite
+          Food From Anywhere.
+        </p>
+        <form class="prefooter-form">
+          <label for="prefooter-subsribe" class="prefooter-label"></label>
+          <input
+            type="email"
+            name="prefooter-subsribe"
+            id="prefooter-subsribe"
+            placeholder="Enter your email"
+            class="prefooter-input"
+          />
+          <button type="button" class="prefooter-button">Subscribe</button>
+        </form>
+      </section>
     </main>
     <footer></footer>
   </body>

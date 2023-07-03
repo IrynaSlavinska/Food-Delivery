@@ -1,10 +1,11 @@
 @media screen and (min-width: 1280px) {
   .container {
-    max-width: unset;
+    min-width: 1280px;
     padding-right: 16px;
     padding-left: 16px;
   }
-  .offer-container {
+  /* offer */
+  .offer {
     background-image: url(../image/desktop-bg-1.png);
     display: flex;
     gap: 90px;
@@ -36,5 +37,25 @@
   }
   .offer-link-wrap {
     display: none;
+  }
+  /* favorites */
+  .favorites-text {
+    margin-bottom: 40px;
+  }
+  .favorites-list {
+    max-width: 1248px;
+    flex-basis: calc((100% - 64px) / 3);
+  }
+  /* customers */
+  .customers {
+    background-image: url(../image/desktop-bg-2.png);
+    padding-top: 100px;
+    padding-bottom: 200px;
+  }
+  .customers-list {
+    gap: 140px;
+  }
+  .customers-item {
+    max-width: 501px;
   }
 }
