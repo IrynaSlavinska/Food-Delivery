@@ -254,13 +254,21 @@
       </section>
       <!---------------------------------PREFOOTER--------------------------------->
       <section class="prefooter container">
-        <img
-          src="./image/banana-1-1x.png"
-          alt="banana"
-          width="161"
-          height="78"
-          class="prefooter-image"
-        />
+        <picture class="banana-img">
+          <source
+            srcset="./image/banana-1-1x.png 1x, ./image/banana-1-2x.png 2x"
+            media="(max-width: 767.98px)"
+          />
+          <source
+            srcset="./image/banana-2-1x.png 1x, ./image/banana-2-2x.png 2x"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="./image/banana-3-1x.png 1x, ./image/banana-3-2x.png 2x"
+            media="(min-width: 1158px)"
+          />
+          <img src="./image/banana-1-1x.png" alt="Banana" width="" height="" />
+        </picture>
         <h2 class="prefooter-title">Subscribe To Get Special Offers</h2>
         <p class="prefooter-text">
           Order now and receive 10% off your first meal with Enjoy Your Favorite
@@ -279,6 +287,67 @@
         </form>
       </section>
     </main>
-    <footer></footer>
+    <footer class="footer">
+      <div class="footer-container container">
+        <div class="footer-desk-top">
+          <nav class="footer-navigation">
+            <a href="" class="footer-logo">
+              <!-- <svg class="footer-logo">
+              <use
+                href="./image/delivery-icons.svg#icon-food-logo"
+                wigth="69"
+                hight="51"
+              ></use>
+            </svg> -->LOGO
+            </a>
+            <ul class="footer-navigation-list">
+              <li class="footer-navigation-item">
+                <a href="" class="footer-navigation-link">Home</a>
+              </li>
+              <li class="footer-navigation-item">
+                <a href="" class="footer-navigation-link">About</a>
+              </li>
+              <li class="footer-navigation-item">
+                <a href="" class="footer-navigation-link">Service</a>
+              </li>
+              <li class="footer-navigation-item">
+                <a href="" class="footer-navigation-link">Menu</a>
+              </li>
+              <li class="footer-navigation-item">
+                <a href="" class="footer-navigation-link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <form class="footer-form">
+            <p class="footer-subs-text">Subscribe</p>
+            <label for="footer-subs-input"></label>
+            <input
+              type="email"
+              name="footer-subs-input"
+              id="footer-subs-input"
+              placeholder="Enter your email"
+              class="footer-subs-input"
+            />
+            <button type="button" class="footer-subs-button">Subscribe</button>
+            <p class="footer-policy-text">
+              By subscribing you agree to with our<a
+                href=""
+                class="footer-policy-link"
+              >
+                Privacy Policy</a
+              >
+            </p>
+          </form>
+        </div>
+        <div class="footer-policy-wrap">
+          <div class="footer-policy-iner">
+            <a href="" class="footer-policy-link">Privacy Policy</a>
+            <a href="" class="footer-policy-link">Terms of Service</a>
+            <a href="" class="footer-policy-link">Cookies Settings</a>
+          </div>
+          <p class="footer-policy-right">2022 FoodSta. All right reserved.</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

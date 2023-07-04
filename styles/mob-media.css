@@ -1,5 +1,8 @@
 @media screen and (min-width: 768px) {
-  .offer-container {
+  .offer {
     background-image: url(../image/mobile-bg-1-480.png);
+  }
+  .customers {
+    background-image: url(../image/mobile-bg-2-480.png);
   }
 }

@@ -55,6 +55,7 @@
   /* customers */
   .customers {
     background-image: url(../image/desktop-bg-2.png);
+
     padding-top: 100px;
     padding-bottom: 200px;
   }
@@ -63,5 +64,30 @@
   }
   .customers-item {
     max-width: 501px;
+  }
+  /* prefooter */
+  .banana-img {
+    top: 50%;
+    transform: translateY(-50%);
+    left: 60%;
+  }
+  /* footer */
+  .footer-container {
+    background-image: url(../image/footer-frame-desk-1x.png);
+    background-position: bottom;
+  }
+  .footer-logo {
+    margin-right: 148px;
+  }
+  .footer-desk-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+  }
+  .footer-form {
+    margin-bottom: 0;
+  }
+  .footer-navigation {
+    margin-bottom: 0;
   }
 }
